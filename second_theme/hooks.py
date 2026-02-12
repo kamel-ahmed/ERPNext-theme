@@ -24,9 +24,24 @@ app_license = "mit"
 # Includes in <head>
 # ------------------
 
+website_context = {
+    # "favicon": "/assets/second_theme/images/second_theme.jpg",
+    "splash_image": "/assets/second_theme/images/second_theme.jpg"
+}
+
 # include js, css files in header of desk.html
-# app_include_css = "/assets/second_theme/css/second_theme.css"
-# app_include_js = "/assets/second_theme/js/second_theme.js"
+app_include_css = [
+    "/assets/second_theme/css/custom_sidebar.css",
+    "/assets/second_theme/css/navbar.css",
+    # "/assets/second_theme/css/custom_workspace.css",
+]
+
+app_include_js = [
+    "/assets/second_theme/js/override_sidebar.js",
+    "/assets/second_theme/js/override_navbar.js",
+    "/assets/second_theme/js/override_workspace.js",
+    
+]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/second_theme/css/second_theme.css"
@@ -242,3 +257,4 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+update_website_context = "second_theme.api.website_boot"
